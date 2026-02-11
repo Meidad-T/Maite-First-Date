@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaiteDate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background-gradient"></div>
+
+    <!-- Screen 1: Greeting -->
+    <div class="content-wrapper" id="initial-content">
+        <h1 class="greeting">Hey There, <span id="dynamic-name" class="highlight">Maite</span><span
+                class="cursor">|</span></h1>
+        <button id="hello-btn" class="hidden">Hello!</button>
+    </div>
+
+    <!-- Screen 2: Button Reveal -->
+    <div class="message-wrapper hidden" id="surprise-content">
+        <h2 class="message-text">Looks like there is a message for you!</h2>
+        <button id="open-popup-btn" class="secondary-btn">Oooo what is it?</button>
+    </div>
+
+    <!-- Security Popup -->
+    <div id="security-popup" class="popup-overlay hidden">
+        <div class="popup-content">
+            <div id="popup-step-1">
+                <h2>WAIT! How can I know it's you?</h2>
+                <p class="subtext">This message has been encrypted in order to ensure you are the right person.... if
+                    you are, this should be easyyy, but if you are not... well.... good luck!</p>
+                <button id="its-me-btn">IT'S ME I PROMISE!</button>
+            </div>
+            <div id="popup-step-2" class="hidden">
+                <h2>Okay, Just to be sure...</h2>
+                <p class="subtext">What is the name of your (hopefully our) future guinea pig?</p>
+                <input type="text" id="security-answer" placeholder="Type answer here..." autocomplete="off">
+                <p id="error-msg" class="error-msg hidden">WRONG! This message will self destruct in <span
+                        id="attempts-left">3</span> attempts...</p>
+                <button id="submit-answer-btn">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Screen -->
+    <div id="success-screen" class="hidden">
+        <div class="letter-container">
+            <div class="letter-content">
+                <p>Dear Maite,</p>
+                <p>You are invited to our first date!</p>
+                <p>I am beyond excited to finally get to meet you. From all our conversations over text and on the
+                    phone, it is clear that you are literally the girl version of me while I am the guy version of you,
+                    and that is rare to find.</p>
+                <p>From the very first moment I have laid my eyes on you, I immediately felt it in my stomach... No
+                    silly, not that - the good feeling.... I don't want to say too much yet, since the more I say now,
+                    the more likely I am to scare you... but if my plans will work out, we should have forever for me to
+                    tell you every single detail. But for now, what you should know is that you have captivated me from
+                    the very first moment, and I am beyond thankful we got to meet.</p>
+
+                <p style="margin-top: 30px;">Okay, enough of that... time to plan a date! So, you are hereby invited for
+                    our first date! (of many to come).</p>
+
+                <p><strong>Date:</strong> Sunday, February 15th, 2026</p>
+                <p><strong>Time:</strong> 3:00 PM CST</p>
+                <p><strong>Location:</strong> Stone Oak Park.</p>
+                <p class="sub-text">[Exact location within the park will be given sunday in advance, as I will get there
+                    muchhhh earlier to set it all up.]</p>
+
+                <p><strong>Clothing:</strong> Nothing fancy...</p>
+                <p class="sub-text">[in fact, wear clothes you don't mind getting some paint on]</p>
+
+                <p><strong>What to bring?:</strong> Your adorable self, your beautiful smile, your sweet laugh, and ofc
+                    your brilliant mind.</p>
+                <p class="sub-text">[In case you are wondering, I don't really know when the date will "end" per say...
+                    it purely depends on how long we wish to stay but if its up to me, it will never end.]</p>
+
+                <p style="margin-top: 30px;">If you have further questions, please let me know! I planned for this date
+                    for many many hours so I truly hope all the components come together and work out well.</p>
+                <p>You are more than welcome to re-visit this page any time you wish.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
