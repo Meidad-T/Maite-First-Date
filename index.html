@@ -17,7 +17,7 @@
     <!-- Screen 1: Greeting -->
     <div class="content-wrapper" id="initial-content">
         <h1 class="greeting">Hey There, <span id="dynamic-name" class="highlight">Maite</span><span
-                class="cursor">|</span></h1>
+                class="cursor"></span></h1>
         <button id="hello-btn" class="hidden">Hello!</button>
     </div>
 
@@ -51,40 +51,103 @@
     <div id="success-screen" class="hidden">
         <div class="letter-container">
             <div class="letter-content">
-                <p>Dear Maite,</p>
-                <p>You are invited to our first date!</p>
-                <p>I am beyond excited to finally get to meet you. From all our conversations over text and on the
-                    phone, it is clear that you are literally the girl version of me while I am the guy version of you,
-                    and that is rare to find.</p>
-                <p>From the very first moment I have laid my eyes on you, I immediately felt it in my stomach... No
-                    silly, not that - the good feeling.... I don't want to say too much yet, since the more I say now,
-                    the more likely I am to scare you... but if my plans will work out, we should have forever for me to
-                    tell you every single detail. But for now, what you should know is that you have captivated me from
-                    the very first moment, and I am beyond thankful we got to meet.</p>
+                <!-- Opening Section -->
+                <div class="letter-section">
+                    <p>Dear Maite,<br>You are invited to our first date!</p>
+                    <p>I am beyond excited to finally get to meet you.<br>From all our conversations over text and on
+                        the phone, it is clear that you are literally the girl version of me while I am the guy version
+                        of you, and that is rare to find.</p>
+                    <p>From the very first moment I have laid my eyes on you, I immediately felt it in my
+                        stomach...<br>No silly, not that! - the good feeling....<br>I don't want to say too much already
+                        since I fear the more I say now, the more likely I am to scare you... but if my plans will work
+                        out, we should have forever for me to tell you every single detail.<br>But for now, what you
+                        should know is that you have captivated me from the very first moment, and you are truly special
+                        to me, and make feel things I have never felt before.<br>I am beyond thankful we found each
+                        other.</p>
+                </div>
 
-                <p style="margin-top: 30px;">Okay, enough of that... time to plan a date! So, you are hereby invited for
-                    our first date! (of many to come).</p>
+                <!-- Details Section (Attention Grabbing) -->
+                <div class="letter-section details-section">
+                    <p class="section-intro">Okay, enough of that... time to plan a date! So, you are hereby invited for
+                        our first date! (of many to come).</p>
 
-                <p><strong>Date:</strong> Sunday, February 15th, 2026</p>
-                <p><strong>Time:</strong> 3:00 PM CST</p>
-                <p><strong>Location:</strong> Stone Oak Park.</p>
-                <p class="sub-text">[Exact location within the park will be given sunday in advance, as I will get there
-                    muchhhh earlier to set it all up.]</p>
+                    <div class="detail-box">
+                        <p><strong>Date:</strong> Sunday, February 15th, 2026</p>
+                        <p><strong>Time:</strong> 3:00 PM CST</p>
+                        <p class="sub-text">we could move this time if you wish... but I thought 3 PM gives me time to
+                            get down to San Antonio, find a table at the park, setup the small activity, and gives us
+                            plenty of hours of sunlights (+maybe even catch the sunset!)</p>
+                        <p><strong>Location:</strong> Stone Oak Park.</p>
+                        <p class="sub-text">Exact location within the park will be given sunday in advance, as I will
+                            get there muchhhh earlier to set it all up.</p>
 
-                <p><strong>Clothing:</strong> Nothing fancy...</p>
-                <p class="sub-text">[in fact, wear clothes you don't mind getting some paint on]</p>
+                        <p><strong>Clothing:</strong> Nothing fancy...</p>
+                        <p class="sub-text">in fact, wear clothes you don't mind getting some paint on</p>
 
-                <p><strong>What to bring?:</strong> Your adorable self, your beautiful smile, your sweet laugh, and ofc
-                    your brilliant mind.</p>
-                <p class="sub-text">[In case you are wondering, I don't really know when the date will "end" per say...
-                    it purely depends on how long we wish to stay but if its up to me, it will never end.]</p>
+                        <p><strong>What to bring?:</strong></p>
+                        <div class="checklist">
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span>Your adorable self</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span>Your beautiful smile</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span>Your artistic skills</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span>Your sweet laugh</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span>Very interesting questions</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span>Your brilliant mind</span>
+                            </label>
+                        </div>
+                        <p class="sub-text">we need to get to know each other after all :)</p>
 
-                <p style="margin-top: 30px;">If you have further questions, please let me know! I planned for this date
-                    for many many hours so I truly hope all the components come together and work out well.</p>
-                <p>You are more than welcome to re-visit this page any time you wish.</p>
+                        <p class="sub-text">In case you are wondering, I don't really know when the date will "end" per
+                            say... it purely depends on how long we wish to stay but if its up to me, it will end at 13
+                            PM (that's not a typo).</p>
+                    </div>
+                </div>
+
+                <!-- Closing Section -->
+                <div class="letter-section">
+                    <p>If you have further questions, please let me know! I planned for this date for many many hours so
+                        I truly hope all the components come together and work out well.</p>
+                    <p>You are more than welcome to re-visit this page any time you wish. After all, you are the only
+                        person in the world that can access this page, so it is alllll yours.</p>
+                </div>
+
+                <!-- Response Buttons -->
+                <div class="response-buttons">
+                    <button id="btn-yes" class="response-btn btn-yes">See you then!</button>
+                    <button id="btn-aww" class="response-btn btn-aww">Awwwww</button>
+                    <button id="btn-no" class="response-btn btn-no">Nope</button>
+                </div>
             </div>
         </div>
     </div>
+
+    <!-- Celebration Screen -->
+    <div id="celebration-screen" class="hidden">
+        <div class="celebration-content">
+            <h1 class="celebration-text">Yayyyyyy!!!</h1>
+            <img id="guinea-pig-img" src="guinea_pig.png" alt="Cute Guinea Pig" class="guinea-pig-image">
+        </div>
+        <canvas id="confetti-canvas"></canvas>
+    </div>
+
+    <!-- Floating Emoji Container -->
+    <div id="emoji-container"></div>
 
     <script src="script.js"></script>
 </body>
