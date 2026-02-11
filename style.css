@@ -212,6 +212,27 @@ button:active {
     width: 100%;
 }
 
+/* Envelope Image */
+.envelope-image {
+    max-width: 200px;
+    width: 60%;
+    margin: 20px 0 30px;
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.2));
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
 /* Popup Styles */
 .popup-overlay {
     position: fixed;
